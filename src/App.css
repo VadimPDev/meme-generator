@@ -1,38 +1,97 @@
 .App {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  background-color: #fff;
+  border: 1px solid grey;
+  box-shadow: 0px 3px 12px 9px rgba(0,0,0,0.75);
+  z-index: 1;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.modal .modal-data {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.modal .mem-img {
+  padding-top: 40px;
+}
+.modal .modal-title {
+  margin: 0 auto;
+  font-size: 21px;
+}
+
+.modal .modal-bottom button {
+  border: none;
+  font-size: 21px;
+  width: 100px;
+  height: 50px;
+  margin: 10px;
+  outline: none;
+  cursor: pointer;
+}
+.modal .modal-bottom {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.meme-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.meme-img img {
+  width: 550px;
+  height: 550px;
 }
+.meme-img button {
+  margin-top: 30px;
+  width: 150px;
+  height: 40px;
+  font-size: 21px;
+  background-color: #088A08;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.meme-create{
+  display: flex;
+  flex-direction: column;
+  margin-left: 25px;
+}
+
+.meme-create input {
+  margin: 10px;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-field input {
+  margin-left: 0;
+}
+
+.submit-button {
+  font-size: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: royalblue;
+  outline: none;
+  cursor: pointer;
+}
+
